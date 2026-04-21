@@ -15,6 +15,13 @@
         'Noto Color Emoji';
 }
 
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 100 900;
+    src: url("../fonts/Lobster-Regular.ttf") format("truetype");
+}
+
 @theme inline {
     --font-heading:
         var(--font-sans);
@@ -240,4 +247,8 @@
   html {
     @apply font-sans;
     }
+}
+
+@theme {
+    --breakpoint-3xl: 1600;
 }

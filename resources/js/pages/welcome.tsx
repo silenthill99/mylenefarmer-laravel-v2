@@ -7,6 +7,7 @@ import {
     CarouselPrevious,
 } from '@/components/ui/carousel';
 import storage from '@/routes/storage';
+import PageLayout from '@/layout/page-layout';
 
 export default function Welcome() {
     const {albums} = usePage().props;
@@ -14,7 +15,7 @@ export default function Welcome() {
     console.log(albums);
 
     return (
-        <>
+        <PageLayout>
             <Head title="Welcome">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link
@@ -51,6 +52,6 @@ export default function Welcome() {
                 <CarouselPrevious className={'text-black'} />
                 <CarouselNext className={'text-black'} />
             </Carousel>
-        </>
+        </PageLayout>
     );
 }

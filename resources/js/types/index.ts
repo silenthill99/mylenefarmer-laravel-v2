@@ -1,3 +1,5 @@
+import type { User } from '@/types/auth';
+
 export type * from './auth';
 
 export interface Album {
@@ -19,4 +21,19 @@ export interface MenuNav {
     link?: string;
     isDropdown?: boolean;
     children?: MenuNav[];
+}
+
+export type Clips = {
+    id: number;
+    title: string;
+    url: string;
+};
+
+export interface Role {
+    users: User[];
+    id: string;
+    name: string;
+    slug: string;
+    created_at?: string;
+    updated_at?: string;
 }
