@@ -15,7 +15,7 @@ export default function Welcome() {
     console.log(albums);
 
     return (
-        <PageLayout>
+        <PageLayout className={'flex items-center justify-center gap-10 text-[32px] text-white'}>
             <Head title="Welcome">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link

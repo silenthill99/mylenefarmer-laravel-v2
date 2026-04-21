@@ -33,10 +33,9 @@ const PageLayout = ({
 
     return (
         <div
-            className={cn(
-                'flex min-h-screen flex-col bg-[url("/background.jpg")] bg-cover bg-fixed bg-center bg-no-repeat',
-                className
-            )}
+            className={
+                'flex min-h-screen flex-col bg-[url("../background.jpg")] bg-cover bg-fixed bg-center bg-no-repeat'
+            }
             {...props}
         >
             <header
